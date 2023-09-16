@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Home{% endblock %}</title>
-        <link rel="icon" href="{{ asset('fav.ico') }}">
+        <link rel="icon" href="{{ asset('favicon.ico') }}">
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
@@ -12,7 +12,8 @@
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
     </head>
-    <body>
+    <body class="bg-white dark:bg-gradient-to-r from-gray-900 to-blue-800 dark:text-zinc-50">
+        {% include "include/_header.html.twig" %}
         {% block body %}{% endblock %}
     </body>
 </html>
