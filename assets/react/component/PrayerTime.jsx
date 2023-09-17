@@ -1,5 +1,5 @@
 import React  from 'react';
-export default function Prayer({image, title,time}) {
+export default function PrayerTime({image, title,time}) {
     return (
         <>
             <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
